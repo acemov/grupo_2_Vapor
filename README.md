@@ -1,2 +1,3 @@
-# grupo_2_Vapor
-grupo n2
+# Vapor
+¿Qué es Vapor?
+Es una tienda digital de compra y venta de videojuegos
