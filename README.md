@@ -9,3 +9,10 @@ Es una tienda digital de compra y venta de videojuegos dirigido para un publico 
 - Fernando Agustin Baiz Guitian
 - Misael Lamas
 - Julio Agusto Montaño Nogales
+## Referentes
+- [Steam](https://store.steampowered.com/?l=spanish)
+- [Blizzard](https://www.blizzard.com/es-es/)
+- [Electronic Arts](https://www.ea.com/es-es)
+- [Epic Games](https://store.epicgames.com/es-ES/)
+- [Gog](https://www.gog.com/en)
+- [G2A](https://www.g2a.com/es/)
