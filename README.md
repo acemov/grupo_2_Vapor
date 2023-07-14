@@ -2,10 +2,10 @@
 ## ¿Qué es Vapor?
 Es una tienda digital de compra y venta de videojuegos dirigido para un publico de jugadores entusiastas y a aquellos que buscan regalos para otros jugadores.
 ## Colaboradores:
-- Tito Gallego Franco &rarr; acemov
-- Lucas Lagoria &rarr; noctis-fleuret
-- Hector Paul Liendro &rarr; Heclie
-- Diego Valentin Lozano &rarr;  ValentinLzn
-- Fernando Agustin Baiz Guitian &rarr; 
-- Misael Lamas &rarr;
-- Julio Agusto Montaño Nogales &rarr; 
+- Tito Gallego Franco [acemov](https://github.com/Heclie)
+- Lucas Lagoria [noctis-fleuret](https://github.com/noctis-fleuret)
+- Hector Paul Liendro [Heclie](https://github.com/Heclie)
+- Diego Valentin Lozano [ValentinLzn](https://github.com/ValentinLzn)
+- Fernando Agustin Baiz Guitian
+- Misael Lamas
+- Julio Agusto Montaño Nogales
