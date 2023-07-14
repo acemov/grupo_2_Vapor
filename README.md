@@ -1,5 +1,4 @@
 # Vapor
----
 ## ¿Qué es Vapor?
 Es una tienda digital de compra y venta de videojuegos dirigido para un publico de jugadores entusiastas y a aquellos que buscan regalos para otros jugadores.
 ---
