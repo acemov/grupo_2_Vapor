@@ -1,3 +1,85 @@
 body{
-    background-color: brown;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 16px;
 }
+/* ------------------------HEADER------------------------------ */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #74121D;
+}
+.header__link,.header__logo,.header__buscador{
+    margin: 10px 0;
+}
+.header__logo img{
+    width: 40px;
+    height: 40px;
+    padding-right: 8px;
+}
+.header__logo h1{
+    font-size: 24px;
+    margin: 0;
+}
+.header__logo{
+    margin-top: 20px;
+}
+.header__logo,.header__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__link li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.header__link{
+    margin-bottom: 20px;
+    padding: 0;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+/* ------------------------MAIN------------------------------ */
+main {
+    width: 100%;
+    background: rgb(255,104,121);
+    background: radial-gradient(circle, rgba(255,104,121,1) 0%, rgba(116,18,29,1) 100%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor{
+    width: 80%;
+    background-color: #A7333F;
+    margin: 10% 0;
+    
+}
+.producto__free--1 img{
+    width: 90%;
+    margin: 5% auto 0;
+    display: block;
+}
+.detalle--graits{
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.detalle--graits p {
+    margin: 3px;
+    font-weight: 500;
+}
+.detalle--caracteristicas h2, .detalle--caracteristicas p {
+    margin: 0;
+}
+.detalle--caracteristicas{
+    margin:  3px 0 0 5%;
+}
+/* ------------------------FOOTER------------------------------ */

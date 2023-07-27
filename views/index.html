@@ -4,39 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/normalize.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/normalize.css">
     <link rel="stylesheet" href="/public/css/home.css">
-    <title>Practicando4</title>
+    <title>Bienvenido a Vapor</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="/public/img/logo.png" alt="logo" class="imagen">
-            <h2>VAPOR</h2>
+        <div class="header__logo">
+            <img src="/public/img/logo.png" alt="logo">
+            <h1>VAPOR</h1>
         </div>
-        <div class="content">
-            <ul type="None">
-                <li class="separar">ACERCA DE</li>
-                <li class="separar">SOPORTE</li>
-            </ul>
-            <input class="separar-input" type="text" placeholder="Buscar">
-            <div class="separar-user">
-                <i class="fas fa-user" style="color: #ffffff; "></i>
-            </div>
-            <div class="carrito">
-                <i class="fas fa-shopping-cart" style="color: #ffffff;"></i>
-            </div>
+        <div class="header__buscador">
+            <input type="text" placeholder="Buscar">
         </div>
+        <ul class="header__link" type="None">
+            <li> <a href="#">ACERCA DE</a></li>
+            <li><a href="#"><i class="fas fa-user" style="color: #ffffff; "></i></a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart" style="color: #ffffff;"></i></a></li>
+            <li> <a href="#">SOPORTE</a></li>
+        </ul>
+        <img src="/public/img/carrion/fondo_home2.png" alt="fondo de producto">
     </header>
     <main>
-        <div class="fondo-carrion">
-            <img src="/public/img/carrion/fondo con logo.jpg alt="fondo" class="lol-2">
-        </div>
-        <div class="general">
-            <img src="/public/img/carrion/ alt="fondo2" class="img-2">
-        </div>
+        <section class="contenedor">
+
+            <article class="producto__free--1">
+                <a href="#"><img src="/public/img/carrion/producto1_free.jpg" alt="primer producto gratis"></a>
+                
+                <div class="detalle--graits">
+                    <p>GRATIS</p>
+                </div>
+                <div class="detalle--caracteristicas">
+                    <h2>Remnant II</h2>
+                    <p>Finaliza el 25/10/2023</p>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <img src="" alt="">
+                    <p>gratis</p>
+                </div>
+                <div>
+                    <h2>Remnant II</h2>
+                    <p>Finaliza el 25/10/2023</p>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
 
