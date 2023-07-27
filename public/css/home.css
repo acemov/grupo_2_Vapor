@@ -54,32 +54,74 @@ main {
     align-items: center;
     justify-content: center;
 }
+.titulo{
+    font-size: 18px;
+}
+.descripcion{
+    font-size: 16px;
+    color: rgb(196, 196, 196);
+}
 .contenedor{
     width: 80%;
     background-color: #A7333F;
-    margin: 10% 0;
-    
+    margin: 5% 0;
+    padding: 5%;
 }
-.producto__free--1 img{
-    width: 90%;
-    margin: 5% auto 0;
+article h2 ,article p{
+    margin: 0;
+}
+
+img {
+    width: 100%;
     display: block;
 }
+
 .detalle--graits{
     background-color: black;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .detalle--graits p {
     margin: 3px;
-    font-weight: 500;
+    font-weight: 900;
+    font-size: 18px;
 }
-.detalle--caracteristicas h2, .detalle--caracteristicas p {
-    margin: 0;
+.detalle .titulo{
+    margin-top: 5px;
 }
-.detalle--caracteristicas{
-    margin:  3px 0 0 5%;
+.-caracteristicas--1 .descripcion{
+    margin-bottom: 15px;
 }
+
 /* ------------------------FOOTER------------------------------ */
+footer{
+    width: 100%;
+    background: rgb(213,82,96);
+    background: radial-gradient(circle, rgba(213,82,96,1) 0%, rgba(88,12,31,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer p{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.redes li {
+    padding:10px;
+}
+.politicas{
+    margin-bottom: 20px;
+}
