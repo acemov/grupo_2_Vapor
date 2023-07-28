@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Inter', sans-serif;
     color: white;
@@ -94,7 +97,7 @@ img {
     margin-bottom: 15px;
 }
 
-.carrusel,.juego-recomendados{
+.carrusel,.juegos-recomendados{
     display: none;
 }
 
@@ -135,12 +138,13 @@ footer p{
     main{
         flex-direction: column;
     }
-    .carrusel,.juego-recomendados{
+    .carrusel,.juegos-recomendados{
         display: block;
     }
+    /* ---------------carrusel--------------- */
     .carrusel{
         width: 80%;
-        margin: 5% 0 0 0;
+        margin: 5% 0 5% 0;
         padding: 5%;
         background-color: rgba(167, 51, 63, 0.5);
     }
@@ -149,7 +153,7 @@ footer p{
         margin: auto;
     }
     .img-demostrativa{
-        margin: 5px;
+        margin: 1%;
         flex-basis: 40%;
     }
     .img-demos{
@@ -170,6 +174,37 @@ footer p{
     }
     .daymare p{
         margin: 0 0 5px 0;
+    }
+    /* ----------juegos recomendados-------- */
+    .juegos-recomendados {
+        margin: 0;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgba(167, 51, 63, 0.5);
+    }
+    .juegos-recomendados article{
+        margin: 1%;
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-JR{
+        background-color: rgba(167, 51, 63, 0.5);
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .juegos-recomendados ul ,.titulos-games{
+        text-align: center;
+        padding: 0%;
+        margin: 0;
+    }
+    .titulos-games{
+        margin: 10px 0;
     }
 }
 
