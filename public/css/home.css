@@ -1,5 +1,5 @@
 body{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: white;
     font-size: 16px;
 }
@@ -63,7 +63,7 @@ main {
 }
 .contenedor{
     width: 80%;
-    background-color: #A7333F;
+    background-color: rgba(167, 51, 63, 0.5);
     margin: 5% 0;
     padding: 5%;
 }
@@ -92,6 +92,10 @@ img {
 }
 .-caracteristicas--1 .descripcion{
     margin-bottom: 15px;
+}
+
+.carrusel,.juego-recomendados{
+    display: none;
 }
 
 /* ------------------------FOOTER------------------------------ */
@@ -124,4 +128,51 @@ footer p{
 }
 .politicas{
     margin-bottom: 20px;
+}
+@media (min-width: 460px){
+
+    /* ------------------------main----------------------------- */
+    main{
+        flex-direction: column;
+    }
+    .carrusel,.juego-recomendados{
+        display: block;
+    }
+    .carrusel{
+        width: 80%;
+        margin: 5% 0 0 0;
+        padding: 5%;
+        background-color: rgba(167, 51, 63, 0.5);
+    }
+    .carrusel-img-principal{
+        width: 80%;
+        margin: auto;
+    }
+    .img-demostrativa{
+        margin: 5px;
+        flex-basis: 40%;
+    }
+    .img-demos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 60%;
+    }
+    .daymare{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .daymare h2{
+        margin: 10px 0 5px 0;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .daymare p{
+        margin: 0 0 5px 0;
+    }
+}
+
+@media (min-width: 768px){
+
 }
