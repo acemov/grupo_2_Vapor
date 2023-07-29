@@ -1,76 +1,104 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Inter', sans-serif;
     color: white;
     font-size: 16px;
 }
+
 /* ------------------------HEADER------------------------------ */
-header {
+.header-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #74121D;
 }
-.header__link,.header__logo,.header__buscador{
-    margin: 10px 0;
+
+.header__link{
+    margin: 0;
 }
-.header__logo img{
-    width: 40px;
-    height: 40px;
+
+.header__logo img {
+    width: 60px;
+    height: 50px;
     padding-right: 8px;
 }
-.header__logo h1{
+
+.header__logo h1 {
     font-size: 24px;
     margin: 0;
 }
-.header__logo{
+
+.header__logo {
     margin-top: 20px;
+    margin-bottom: 60px;
 }
-.header__logo,.header__link{
+.header__buscador{
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.header__logo,
+.header__link {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header__link li a{
+
+.header__link li a {
     color: white;
     text-decoration: none;
-    padding: 0 15px;
     font-size: 16px;
     font-weight: bold;
 }
-.header__link{
+
+.header__link {
     margin-bottom: 20px;
+    justify-content: space-around;
+    width: 90%;
     padding: 0;
 }
+
 header img {
     width: 100%;
     height: auto;
 }
+.sin-padding a{
+    white-space: nowrap;
+}
+
 /* ------------------------MAIN------------------------------ */
 main {
     width: 100%;
-    background: rgb(255,104,121);
-    background: radial-gradient(circle, rgba(255,104,121,1) 0%, rgba(116,18,29,1) 100%); 
+    background: rgb(255, 104, 121);
+    background: radial-gradient(circle, rgba(255, 104, 121, 1) 0%, rgba(116, 18, 29, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.titulo{
+
+.titulo {
     font-size: 18px;
 }
-.descripcion{
+
+.descripcion {
     font-size: 16px;
     color: rgb(196, 196, 196);
 }
-.contenedor{
+
+.contenedor {
     width: 80%;
-    background-color: rgba(167, 51, 63, 0.5);
+    background-color: rgba(167, 51, 63, 0.3);
     margin: 5% 0;
     padding: 5%;
 }
-article h2 ,article p{
+
+article h2,
+article p {
     margin: 0;
 }
 
@@ -79,102 +107,143 @@ img {
     display: block;
 }
 
-.detalle--graits{
+.detalle--graits {
     background-color: black;
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .detalle--graits p {
     margin: 3px;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 14px;
 }
-.detalle .titulo{
+
+.detalle .titulo {
     margin-top: 5px;
 }
-.-caracteristicas--1 .descripcion{
+
+.-caracteristicas--1 .descripcion {
     margin-bottom: 15px;
 }
 
-.carrusel,.juegos-recomendados,.titulo-JR{
+.carrusel,
+.juegos-recomendados,
+.titulo-JR {
     display: none;
 }
 
 /* ------------------------FOOTER------------------------------ */
-footer{
+.footer__logo-2 img {
+    width: 60px;
+    height: 50px;
+    padding-right: 8px;
+}
+.footer__logo-2{
+    
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px;
+}
+.footer__logo-2 h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+footer {
     width: 100%;
-    background: rgb(213,82,96);
-    background: radial-gradient(circle, rgba(213,82,96,1) 0%, rgba(88,12,31,1) 100%);
+    background: rgb(213, 82, 96);
+    background: radial-gradient(circle, rgba(213, 82, 96, 1) 0%, rgba(88, 12, 31, 1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-footer ul{
+
+footer ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     font-size: 13px;
+    justify-content: center;
 }
-footer a{
+
+footer a {
     color: white;
     text-decoration: none;
 }
-footer p{
+
+footer p {
     margin: 0;
     margin-bottom: 10px;
     font-size: 13px;
+    text-align: center;
 }
+
 .redes li {
-    padding:10px;
+    padding: 10px;
 }
-.politicas{
+
+.politicas {
     margin-bottom: 20px;
+    justify-content: center;
 }
-@media (min-width: 460px){
+
+@media (min-width: 460px) {
 
     /* ------------------------main----------------------------- */
-    main{
+    main {
         flex-direction: column;
     }
-    .carrusel,.juegos-recomendados{
+
+    .carrusel,
+    .juegos-recomendados {
         display: block;
     }
+
     /* ---------------carrusel--------------- */
-    .carrusel{
+    .carrusel {
         width: 80%;
         margin: 5% 0 5% 0;
         padding: 5%;
-        background-color: rgba(167, 51, 63, 0.5);
+        background-color: rgba(167, 51, 63, 0.3);
     }
-    .carrusel-img-principal{
+
+    .carrusel-img-principal {
         width: 80%;
         margin: auto;
     }
-    .img-demostrativa{
+
+    .img-demostrativa {
         margin: 1%;
         flex-basis: 40%;
     }
-    .img-demos{
+
+    .img-demos {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 60%;
     }
-    .daymare{
+
+    .daymare {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .daymare h2{
+
+    .daymare h2 {
         margin: 10px 0 5px 0;
         font-size: 20px;
         font-weight: bolder;
     }
-    .daymare p{
+
+    .daymare p {
         margin: 0 0 5px 0;
     }
+
     /* ----------juegos recomendados-------- */
     .juegos-recomendados {
         margin: 0;
@@ -182,32 +251,93 @@ footer p{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: rgba(167, 51, 63, 0.5);
+        background-color: rgba(167, 51, 63, 0.3);
     }
-    .juegos-recomendados article{
-        margin: 1%;
+
+    .juegos-recomendados article {
+        margin-bottom: 40px;
         flex-basis: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .titulo-JR{
-        background-color: rgba(167, 51, 63, 0.5);
+
+    .titulo-JR {
+        background-color: rgba(167, 51, 63, 0.3);
         width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .juegos-recomendados ul ,.titulos-games{
+
+    .juegos-recomendados ul,
+    .titulos-games {
         text-align: center;
         padding: 0%;
         margin: 0;
     }
-    .titulos-games{
-        margin: 10px 0;
+
+    .titulos-games {
+        margin: 7px 0;
+    }
+
+    .juego-1,
+    .juego-3 {
+        margin-right: 20px;
+    }
+
+    .juego-2,
+    .juego-4 {
+        margin-left: 20px;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
+    /* ------------------------header----------------------------- */
+
+    .header-1 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 5%;
+    }
+    .lista {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__buscador{
+        position: static;
+        transform: translateX(0); 
+    }
+    .header__link li:nth-child(1) {
+        order: 3;
+    }
+    .header__link li:nth-child(2) {
+        order: 1;
+    }
+    .header__link li:nth-child(3) {
+        order: 4;
+    }
+    .header__link li:nth-child(4) {
+        order: 5;
+    }
+    .header__link li:nth-child(5) {
+        order: 2;
+    }
+    .header__logo{
+        margin: 0;
+    }
+    .header__link{
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .header__link li{
+        padding-left: 40px;
+    }
+}
+@media (min-width: 1240px) {
+    .header-1 {
+        padding: 20px 20%;
+    }
 }

@@ -14,22 +14,24 @@
 </head>
 
 <body>
+    <!-- ------------------------header-----------------------------  -->
     <header>
+        <div class="header-1">
         <div class="header__logo">
             <img src="/public/img/logo.png" alt="logo">
             <h1>VAPOR</h1>
         </div>
-        <div class="header__buscador">
-            <input type="text" placeholder="Buscar">
-        </div>
         <ul class="header__link" type="None">
-            <li> <a href="#">ACERCA DE</a></li>
+            <li class="header__buscador" ><input  type="text" placeholder="Buscar"></li>
+            <li class="sin-padding"> <a  href="#">ACERCA DE</a></li>
             <li><a href="#"><i class="fas fa-user" style="color: #ffffff; "></i></a></li>
             <li><a href="#"><i class="fas fa-shopping-cart" style="color: #ffffff;"></i></a></li>
             <li> <a href="#">SOPORTE</a></li>
         </ul>
+    </div>
         <img src="/public/img/carrion/fondo_home2.png" alt="fondo de producto">
     </header>
+    <!-- ------------------------main-----------------------------  -->
     <main>
         <section class="carrusel">
             <img class="carrusel-img-principal" src="/public/img/daymara/daymara.jpg" alt="game">
@@ -49,44 +51,56 @@
         <h2>Juegos Recomendados</h2>
         </div>
         <section class="juegos-recomendados">
-            <article>
+            <article class="juego-1">
                 <img src="/public/img/JR1.jpg" alt="Plague Inc">
+                <div class="detalle--graits">
+                    <p>$12</p>
+                </div>
                 <h3 class="titulos-games">Plague Inc</h3>
                 <ul type="None">
-                    <li>Indie</li>
+                    <li>Un jugador</li>
                     <li>Estrategia</li>
                     <li>Simulador</li>
-                    <li>Un jugador</li>
+                    <li>Indie</li>
                 </ul>
             </article>
-            <article>
+            <article class="juego-2">
                 <img src="/public/img/JR2.jpg" alt="Zombie Army 4">
+                <div class="detalle--graits">
+                    <p>$15</p>
+                </div>
                 <h3 class="titulos-games">Zombie Army 4</h3>
                 <ul type="None">
-                    <li>Disparos</li>
                     <li>Multijugador</li>
+                    <li>Disparos</li>
                     <li>Acción</li>
                     <li>JcE</li>
                 </ul>
             </article>
-            <article>
+            <article class="juego-3">
                 <img src="/public/img/JR3.jpg" alt="Remnant II">
+                <div class="detalle--graits">
+                    <p>$11</p>
+                </div>
                 <h3 class="titulos-games">Remnant II</h3>
                 <ul type="None">
-                    <li>Rol</li>
+                    <li>Tipo Dark Souls</li>
                     <li>Aventura</li>
                     <li>Acción</li>
-                    <li>Tipo Dark Souls</li>
+                    <li>Rol</li>
                 </ul>
             </article>
-            <article>
+            <article class="juego-4">
                 <img src="/public/img/JR4.jpg" alt="Retribution">
+                <div class="detalle--graits">
+                    <p>$56</p>
+                </div>
                 <h3 class="titulos-games">Retribution</h3>
                 <ul type="None">
-                    <li>RV</li>
-                    <li>Acción</li>
                     <li>Supervivencia</li>
+                    <li>Acción</li>
                     <li>Rol</li>
+                    <li>RV</li>
                 </ul>
             </article>
         </section>
@@ -113,8 +127,9 @@
             </article>
         </section>
     </main>
+    <!-- ------------------------footer-----------------------------  -->
     <footer>
-        <div class="header__logo">
+        <div class="footer__logo-2">
             <img src="/public/img/logo.png" alt="logo">
             <h1>VAPOR</h1>
         </div>
