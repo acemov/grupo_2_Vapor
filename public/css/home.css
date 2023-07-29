@@ -335,6 +335,34 @@ footer p {
     .header__link li{
         padding-left: 40px;
     }
+    /* ------------------------main---------------------------- */
+    .carrusel{
+        display: flex;
+        width: 100%;
+        margin: 5% 0 5% 0;
+        padding: 0 ;
+        background-color: rgba(167, 51, 63, 0.3);
+        align-items: center;
+        justify-content: center;
+    }
+    .daymare{
+        order: -1;
+        width: 200px;
+    }
+    .daymare h2{
+        font-size: 16px;
+    }
+    .carrusel-img-principal {
+        width: 400px;
+        margin: auto 0;
+        padding-left: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .img-demos{
+        width: 200px;
+    }
 }
 @media (min-width: 1240px) {
     .header-1 {
