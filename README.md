@@ -19,3 +19,5 @@ El sitio de Vapor está dirigido principalmente a entusiastas de los videojuegos
 - [Epic Games](https://store.epicgames.com/es-ES/)
 - [Gog](https://www.gog.com/en)
 - [G2A](https://www.g2a.com/es/)
+## Tablero de tareas
+-[Miro(web/programa)](https://miro.com/app/board/uXjVM2MA9Dg=/?share_link_id=503566519555)
