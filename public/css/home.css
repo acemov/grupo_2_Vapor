@@ -7,6 +7,9 @@ body {
     color: white;
     font-size: 16px;
 }
+.negritos{
+    font-weight: 900;
+}
 
 /* ------------------------HEADER------------------------------ */
 .header-1 {
@@ -341,7 +344,7 @@ footer p {
         width: 100%;
         margin: 5% 0 5% 0;
         padding: 0 ;
-        background-color: rgba(167, 51, 63, 0.3);
+        background-color: rgba(167, 51, 63, 0);
         align-items: center;
         justify-content: center;
     }
@@ -363,9 +366,41 @@ footer p {
     .img-demos{
         width: 200px;
     }
+    /* -----------juegos recomendados--------- */
+    .juegos-recomendados {
+        background-color: rgba(167, 51, 63, 0);
+        width: 100%;
+        padding: 20px 50px;
+    }
+    .juegos-recomendados article{
+        flex-basis: 20%;
+        margin: 0 10px;
+    }
+    .titulo-JR{
+        background-color: rgba(167, 51, 63, 0);
+    }
+    .titulo-JR h2 {
+        margin: 0;
+    }
+    /* -----------juegos gratis--------- */
+    .contenedor{
+        display: flex;
+    }
+    .producto__free--1{
+        margin-right:20px;
+    }
 }
 @media (min-width: 1240px) {
     .header-1 {
         padding: 20px 20%;
+    }
+    .carrusel-img-principal{
+        width: 30%;
+    }
+    .img-demos{
+        width: 145%;
+    }
+    .daymare{
+        margin-right: 50px;
     }
 }
