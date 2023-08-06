@@ -1,0 +1,158 @@
+/*barra de navegacion*/
+header {
+    background: #333;
+    color: white; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    height: 55px;
+  }
+  
+  header h1 {
+    font-size: 45px;
+    margin: 0px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: normal;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+  }
+  
+  /*imagen_fondo*/
+
+  body, .main-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-container {
+    background-image: url('img/fondo_compra.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*imagen_fondo*/
+
+  body{
+    background-color:brown
+}
+main {
+    width: 100%;
+    background: rgb(255,104,121);
+    background: radial-gradient(circle, rgba(255,104,121,1) 0%, rgba(116,18,29,1) 100%); 
+}
+  
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-content {
+  text-align: left;
+}
+
+.hero-content img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buy-now {
+  background-color: #4caf50;
+  color: white;
+}
+
+.add-to-cart {
+  background-color: #008CBA;
+  color: white;
+}
+/* estilo de las descripciones*/
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  section.image-description {
+    flex-direction: row;
+  }
+  
+  section.description-image {
+    flex-direction: row-reverse;
+  }
+  
+  section img {
+    max-width: 50%;
+  }
+  
+  section .description {
+    max-width: 45%;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos del pie de painga */
+.footer-section {
+  background: rgb(213, 82, 96);
+  background: radial-gradient(circle, rgba(213, 82, 96, 1) 0%, rgba(88, 12, 31, 1) 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+}
+.copyright {
+  font-size: 25px;
+}
