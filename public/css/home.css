@@ -218,18 +218,18 @@ footer p {
         width: 80%;
         margin: auto;
     }
-
+    
+    .img-demos{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 5px 5px;
+        align-items: center;
+    }
     .img-demostrativa {
-        margin: 1%;
-        flex-basis: 40%;
+        width: 100px;
     }
-
-    .img-demos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 60%;
-    }
+    
 
     .daymare {
         display: flex;
@@ -363,9 +363,6 @@ footer p {
     p{
         font-size: 10px;
     }
-    .img-demos{
-        width: 200px;
-    }
     /* -----------juegos recomendados--------- */
     .juegos-recomendados {
         background-color: rgba(167, 51, 63, 0);
@@ -396,9 +393,6 @@ footer p {
     }
     .carrusel-img-principal{
         width: 30%;
-    }
-    .img-demos{
-        width: 145%;
     }
     .daymare{
         margin-right: 50px;
