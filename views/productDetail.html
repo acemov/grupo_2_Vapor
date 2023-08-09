@@ -1,64 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Detalles de Producto</title>
-    <link rel = "stylesheet" href="/public/css/productDetail.css">
+    <title>Detalles de Producto</title>
+    <link rel="stylesheet" href="/public/css/productDetail.css">
 </head>
+<body>
+    <header>
+        <div class="header-1">
+            <div class="header__logo">
+                <img src="/public/img/logo.png" alt="logo">
+                <h1>VAPOR</h1>
+            </div>
+            <ul class="header__link">
+                <li class="header__buscador"><input type="text" placeholder="Buscar"></li>
+                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#"><i class="fas fa-user" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart" style="color: #ffffff;"></i></a></li>
+                <li><a href="#">SOPORTE</a></li>
+            </ul>
+        </div>
+    </header>
 
-<!--logo_barra_busqueda-->
-<header>
-  <img src="/public/img/logo.png" alt="logo.png">
-
-
-  <h1>Vapor</h1>
-
-  <div class="search-bar">
-    <input type="text" placeholder="Buscar...">
-    <button type="submit">Buscar</button>
-  </div>
-</header>
-
-<!--imagen_fondo_botones_-->
-
-<section class="hero-section">
-    <div class="hero-content">
-      <img src="/public/img/carrion/fondo de producto.jpg" alt="Imagen en el centro">
-      <div class="buttons">
-        <button class="buy-now">Comprar ahora</button>
-        <button class="add-to-cart">Añadir al carrito</button>
-      </div  class="main-container">P0
-</section>
-
-  <!--imagen_descripcion_caracteristicas_-->
-  
-  <section class="image-description">
-  <img src="/public/img/carrion/primera.jpg" alt="Imagen 1">
-  <div class="description">
-    <h2>Acerca del juego</h2>
-    <p>descripción, descripción, descripción, descripción.</p>
-  </div>
-</section>
-
-<section class="description-image">
-  <div class="description">
-    <h2>Carecteristicas</h2>
-    <p>descripción, descripción, descripción, descripción, descripción.</p>
-  </div>
-  <img src="/public/img/carrion/segunda.jpg" alt="Imagen 2">
-</section>
-
-<!---pie_de_pagina-->
-
-<footer class="footer-section">
-  <div class="footer-content">
-      <div class="logo">
-          <img src="/public/img/logo.png" alt="Logo">
-          <span>Vapor</span>
-      </div>
-      <div class="copyright">
-          © Vapor Entertainment Inc.
+    <!--botones_compra_precio-->
+    <section class="producto-section">
+        <div class="caja-padre">
+            <img class="fondo" src="/public/img/carrion/fondo de producto.jpg">
+            <div class="contenido-superpuesto">
+                <img class="logo" src="/public/img/carrion/carrion logo.png" alt="Logo">
+                <p class="precio">Precio: $2.900</p>
+                <div class="botones">
+                    <button class="boton-comprar">Comprar ahora</button>
+                    <button class="boton-carrito">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--imagen_descripcion_caracteristicas_-->
+<section class="producto-section caracteristicas-section">
+  <div class="caja-padre">
+      <div class="caja-hija">
+          <div class="imagen-descripcion">
+              <img class="imagen" src="/public/img/carrion/primera.jpg" alt="Imagen">
+              <div class="descripcion">
+                  <p>Características</p>
+              </div>
+          </div>
       </div>
   </div>
-</footer>
+</section>
+<section class="producto-section descripcion-section">
+  <div class="caja-padre">
+      <div class="caja-hija">
+          <div class="imagen-descripcion">
+              <div class="descripcion">
+                  <p>Descripción</p>
+              </div>
+              <img class="imagen" src="/public/img/carrion/segunda.jpg" alt="Imagen">
+          </div>
+      </div>
+  </div>
+</section>
+    
+    <footer>
+        <div class="footer__logo-2">
+            <img src="/public/img/logo.png" alt="logo">
+            <h1>VAPOR</h1>
+        </div>
+        <ul class="footer__links">
+            <li><a href="#">EMPLEO |</a></li>
+            <li><a href="#">INFORMACIÓN |</a></li>
+            <li><a href="#">ASISTENCIA |</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+        <ul class="footer__redes">
+            <li><a href="#"><i class="fab fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter" style="color: #ffffff;"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube" style="color: #ffffff;"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitch" style="color: #ffffff;"></i></a></li>
+        </ul>
+        <p>©2023 Vapor Entertainment, Inc.</p>
+        <p>Todos los juegos mencionados NO son propiedad de los respectivos desarrolladores de la página web.</p>
+        <ul class="footer__politicas">
+            <li><a href="#">Privacidad |</a></li>
+            <li><a href="#">Legal |</a></li>
+            <li><a href="#">Términos |</a></li>
+            <li><a href="#">Política de cookies |</a></li>
+            <li><a href="#">Ajustes de cookies</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
