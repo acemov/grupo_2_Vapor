@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------main------------------ */
+main {
+    background: rgb(255, 104, 121);
+    background: radial-gradient(circle, rgba(255, 104, 121, 1) 0%, rgba(116, 18, 29, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 20px;
+}
+
+.logo-empresa,
+form,
+.corrector-de-height {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-empresa img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-empresa p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo-empresa {
+    margin-bottom: 25px;
+}
+
+.redes {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding: 0;
+}
+
+form {
+    width: 90%;
+    min-height: 200px;
+    justify-content: space-around;
+}
+
+form input {
+    background-color: #A7333F;
+    border-radius: 5px;
+    color: white;
+    border: #580C1F solid 2px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 205px;
+    
+height: 28px;
+}
+
+form p,
+.inciar-user p {
+    white-space: nowrap;
+    font-size: 25px;
+}
+
+.fab {
+    font-size: 24px;
+}
+
+.inciar-user {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-1 {
+    background-color: #C52233;
+    border-radius: 5px;
+    border: #A7333F solid 2px;
+}
+
+.boton-2 {
+    background-color: transparent;
+    border-radius: 5px;
+    border: #74121D solid 2px;
+}
+
+.boton-1,
+.boton-2 {
+    width: 80%;
+    min-width: 205px;
+    max-width: 320px;
+    height: 10%;
+    min-height: 28px;
+    max-height: 45px;
+}
+
+
+/* -----------------footer---------------- */
+footer {
+    background: rgb(213, 82, 96);
+    background: radial-gradient(circle, rgba(213, 82, 96, 1) 0%, rgba(88, 12, 31, 1) 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer__logo-2 img {
+    width: 60px;
+    height: 50px;
+    padding-right: 8px;
+}
+
+.footer__logo-2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer__logo-2 h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.redes li {
+    padding: 10px;
+}
+
+.politicas {
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.negritos {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    form {
+        height: 250px;
+    }
+    form input, .boton-1, .boton-2{
+        height: 35px;
+        width: 250px;
+    }
+}
