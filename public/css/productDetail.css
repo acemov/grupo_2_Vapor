@@ -262,7 +262,7 @@ footer p {
     font-size: 25px;
   }
   .header__buscador {
-    top: 500%;
+    top: 105px
   }
     .logo {
     max-width: 100%;
@@ -278,12 +278,4 @@ footer p {
     margin: auto;
   }
   
-}
-
-@media (max-width: 560px) {
-
-  .header__buscador{
-    position: static;
-    transform: translateX(0); 
-}
 }
