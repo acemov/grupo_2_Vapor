@@ -7,11 +7,6 @@
   margin-bottom: 20px;
   padding: 0px;
 }
-@media (max-width: 768px) {
-  .header-1 {
-    padding: 5px;
-  }
-}
 
 .header__logo img {
   width: 60px;
@@ -21,7 +16,7 @@
 
 .header__logo h1 {
   font-size: 24px;
-  margin: 0;
+  margin: auto;
 }
 
 .header__buscador {
@@ -36,7 +31,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
+  margin: auto;
   padding: 0;
   margin-bottom: 20px;
 }
@@ -49,8 +44,13 @@
 }
 
 /* Estilos de los detalles del producto */
+body {
+  margin: auto;
+}
+
 .producto-section {
   position: relative;
+  margin-top: -20px; 
 }
 
 .caja-padre {
@@ -60,6 +60,7 @@
 
 .fondo {
   width: 100%;
+  height: 500px;
   display: block;
 }
 
@@ -75,14 +76,17 @@
   justify-content: center;
 }
 
+/*modificar logo*/
+
 .logo {
-  width: 1250px; /* Ajusta el tamaño del logo según tu preferencia */
-  z-index: 0; /* Para asegurar que estén por encima de la imagen de fondo */
+  width: 100%;
+  max-width: 700px;
+  z-index: 0;
 }
 
 .precio {
   z-index: 2;
-  background-color: rgba(102, 6, 6, 0.7); /* Fondo semitransparente para el precio */
+  background-color: rgba(102, 6, 6, 0.7); 
   padding: 1px;
   border-radius: 5px;
 }
@@ -94,7 +98,7 @@
 
 .boton-comprar,
 .boton-carrito {
-  margin: 0px;
+  margin: auto;
 }
 
 
@@ -103,7 +107,7 @@
   color: #fff;
   padding: 0px;
   margin-bottom: 0px;
-}
+ }
 
 .imagen {
   max-width: 100%;  
@@ -118,6 +122,8 @@
 .descripcion-section {
   background-image: url('/public/img/carrion/segunda_fondo.jpg');
   background-size: cover;
+  margin-top: -20px;
+  margin-bottom: -20px; 
 }
 
 .caja-padre {
@@ -141,11 +147,13 @@
 }
 
 .imagen {
-  max-width: 500px;
+  margin: auto;
+  max-width: 550px;
   height:auto;
 }
 
 .descripcion {
+  margin: auto;
   flex:1;
 }
 
@@ -176,7 +184,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0
+  padding: 20px 0;
 }
 
 footer ul {
@@ -246,8 +254,36 @@ footer p {
   text-decoration: none;
   margin: 0 5px;
 }
+
+/*vista_tablet_celular*/
+
 @media (max-width: 768px) {
-  footer {
-    padding: 10px 0;
+    .header__logo h1 {
+    font-size: 25px;
   }
+  .header__buscador {
+    top: 500%;
+  }
+    .logo {
+    max-width: 100%;
+  }
+  .producto-section{
+    font-weight: 500;
+  }
+  
+  .header__link {
+    flex-direction: column;
+  }
+  .header__link li a {
+    margin: auto;
+  }
+  
+}
+
+@media (max-width: 560px) {
+
+  .header__buscador{
+    position: static;
+    transform: translateX(0); 
+}
 }

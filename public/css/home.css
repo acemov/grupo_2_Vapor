@@ -197,9 +197,9 @@ footer p {
 @media (min-width: 460px) {
 
     /* ------------------------main----------------------------- */
-    main {
-        flex-direction: column;
-    }
+        main {
+            flex-direction: column;
+        }
 
     .carrusel,
     .juegos-recomendados {
