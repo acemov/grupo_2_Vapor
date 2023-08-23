@@ -7,7 +7,7 @@ const app = express()
 const publicPath = path.resolve(__dirname, './public')
 
 app.use(express.static(publicPath))
-app.use('view engine', 'ejs')
+app.set('view engine', 'ejs')
 
 // - - - IMPORTANDO RUTAS - - - //
 const rutaCarrito = require('./routes/carrito')
