@@ -9,8 +9,10 @@ const publicPath = path.resolve(__dirname, './public')
 app.use(express.static(publicPath))
 app.use('view engine', 'ejs')
 
+// - - - IMPORTANDO RUTAS - - - //
 const rutaCarrito = require('./routes/carrito')
-
+const rutaIndex = require('./routes/index')
+const rutaLogin = require('./routes/login')
 // - - - SERVIDOR - - - //
 
 app.listen(3000, () => {
@@ -19,8 +21,6 @@ app.listen(3000, () => {
 
 // - - - RUTAS - - - //
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/index.html'))
-})
-
+app.use('/', rutaIndex)
+app.use('/login', rutaLogin)
 app.use('/carrito', rutaCarrito)
