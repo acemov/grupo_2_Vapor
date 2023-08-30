@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles de Producto</title>
-    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/public/css/productDetail.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/productDetail.css">
 </head>
 <body>
     <header>
         <div class="header-1">
             <div class="header__logo">
-                <img src="/public/img/logo.png" alt="logo">
+                <img src="/img/logo.png" alt="logo">
                 <h1>VAPOR</h1>
             </div>
             <ul class="header__link">
@@ -27,9 +27,9 @@
     <!--botones_compra_precio-->
     <section class="producto-section">
         <div class="caja-padre">
-            <img class="fondo" src="/public/img/carrion/fondo de producto.jpg">
+            <img class="fondo" src="/img/carrion/fondo de producto.jpg">
             <div class="contenido-superpuesto">
-                <img class="logo" src="/public/img/carrion/carrion logo.png" alt="Logo">
+                <img class="logo" src="/img/carrion/carrion logo.png" alt="Logo">
                 <p class="precio">Precio: $2.900</p>
                 <div class="botones">
                     <button class="boton-comprar">Comprar ahora</button>
@@ -44,7 +44,7 @@
   <div class="caja-padre">
       <div class="caja-hija">
           <div class="imagen-descripcion">
-              <img class="imagen" src="/public/img/carrion/primera.jpg" alt="Imagen">
+              <img class="imagen" src="/img/carrion/primera.jpg" alt="Imagen">
               <div class="descripcion">
                   <p>Características: este juego es muy bueno. Tenes que comprarlo</p>
               </div>
@@ -59,39 +59,12 @@
               <div class="descripcion">
                   <p>Descripción: que esperas para comprarlo?</p>
               </div>
-              <img class="imagen" src="/public/img/carrion/segunda.jpg" alt="Imagen">
+              <img class="imagen" src="/img/carrion/segunda.jpg" alt="Imagen">
           </div>
       </div>
   </div>
 </section>
     
-    <footer>
-        <div class="footer__logo-2">
-            <img src="/public/img/logo.png" alt="logo">
-            <h1>VAPOR</h1>
-        </div>
-        <ul class="footer__links">
-            <li><a href="#">EMPLEO |</a></li>
-            <li><a href="#">INFORMACIÓN |</a></li>
-            <li><a href="#">ASISTENCIA |</a></li>
-            <li><a href="#">CONTACTO</a></li>
-        </ul>
-        <ul class="footer__redes">
-            <li><a href="#"><i class="fab fa-facebook" style="color: #ffffff;"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter" style="color: #ffffff;"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube" style="color: #ffffff;"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitch" style="color: #ffffff;"></i></a></li>
-        </ul>
-        <p>©2023 Vapor Entertainment, Inc.</p>
-        <p>Todos los juegos mencionados NO son propiedad de los respectivos desarrolladores de la página web.</p>
-        <ul class="footer__politicas">
-            <li><a href="#">Privacidad |</a></li>
-            <li><a href="#">Legal |</a></li>
-            <li><a href="#">Términos |</a></li>
-            <li><a href="#">Política de cookies |</a></li>
-            <li><a href="#">Ajustes de cookies</a></li>
-        </ul>
-    </footer>
+<%- include('../partials/footer.ejs') %>
 </body>
 </html>

@@ -1,5 +1,5 @@
 const controller = {
-    login: function (req, res) {
+    detail: function (req, res) {
         res.render('products/productDetail.ejs')
     }
 }

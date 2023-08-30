@@ -1,4 +1,8 @@
 /* Estilos de la barra de navegación */
+body{
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
 .header-1 {
   display: flex;
   flex-direction: column;
@@ -115,12 +119,12 @@ body {
 }
 
 .caracteristicas-section {
-  background-image: url('/public/img/carrion/primera_fondo.jpg');
+  background-image: url('/img/carrion/primera_fondo.jpg');
   background-size: cover;
 }
 
 .descripcion-section {
-  background-image: url('/public/img/carrion/segunda_fondo.jpg');
+  background-image: url('/img/carrion/segunda_fondo.jpg');
   background-size: cover;
   margin-top: -20px;
   margin-bottom: -20px; 

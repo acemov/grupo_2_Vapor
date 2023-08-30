@@ -19,7 +19,8 @@ app.use(methodOverride('_method'))
 const rutaCart = require('./routes/cart')
 const rutaIndex = require('./routes/index')
 const rutaLogin = require('./routes/login')
-
+const rutaDetail = require('./routes/productdetail')
+const rutaRegister = require('./routes/register')
 // - - - SERVIDOR - - - //
 
 app.listen(3000, () => {
@@ -31,3 +32,5 @@ app.listen(3000, () => {
 app.use('/', rutaIndex)
 app.use('/login', rutaLogin)
 app.use('/cart', rutaCart)
+app.use('/detail', rutaDetail)
+app.use('/register', rutaRegister)

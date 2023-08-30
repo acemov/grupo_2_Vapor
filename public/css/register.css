@@ -1,11 +1,5 @@
 /*Header*/
-.header {
-    text-align: center;
-    padding: 20px;
-    background: rgb(213, 82, 96);
-    background: radial-gradient(circle, rgba(213, 82, 96, 1) 0%, rgba(88, 12, 31, 1) 100%);
-   
-}
+
 
 .logo img {
     max-width: 100px;
@@ -25,7 +19,9 @@ body {
 
 /*Main_Formulario*/
 
-
+main{
+    height: 100vh;
+}
 main {
     background: rgb(255, 104, 121);
     background: radial-gradient(circle, rgba(255, 104, 121, 1) 0%, rgba(116, 18, 29, 1) 100%);
@@ -41,7 +37,6 @@ main {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     

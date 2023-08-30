@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const loginController = require('../controllers/productdetailController')
+const detailController = require('../controllers/productdetailController')
 
-router.get('/', productdetailController.ejs)
+router.get('/', detailController.detail)
 
 module.exports = router
