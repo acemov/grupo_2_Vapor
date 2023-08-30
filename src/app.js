@@ -19,6 +19,7 @@ app.use(methodOverride('_method'))
 const rutaCarrito = require('./routes/carrito')
 const rutaIndex = require('./routes/index')
 const rutaLogin = require('./routes/login')
+
 // - - - SERVIDOR - - - //
 
 app.listen(3000, () => {
