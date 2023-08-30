@@ -8,25 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
-    <link href="/public/css/normalize.css" rel="stylesheet">
-    <link href="/public/css/productCart.css" rel="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/productCart.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-1">
-        <div class="header__logo">
-            <img src="/public/img/logo.png" alt="logo">
-            <h1>VAPOR</h1>
-        </div>
-        <ul class="header__link" type="None">
-            <li class="header__buscador" ><input  type="text" placeholder="Buscar"></li>
-            <li class="sin-padding"> <a  href="#">ACERCA DE</a></li>
-            <li><a href="#"><i class="fas fa-user" style="color: #ffffff; "></i></a></li>
-            <li><a href="#"><i class="fas fa-shopping-cart" style="color: #ffffff;"></i></a></li>
-            <li> <a href="#">SOPORTE</a></li>
-        </ul>
-    </header>
-
+    <%-include('../partials/header')%>
     <main>
         <section>
             <div class="titulo">
@@ -35,7 +21,7 @@
             <article>
                 <div class="articulo">
                     <div class="imagen-titulo">
-                        <img src="/public/img/producto1_free.jpg" alt="Juego1" class="imagen-producto"></i>
+                        <img src="/img/producto1_free.jpg" alt="Juego1" class="imagen-producto"></i>
                         <p class="titulo-producto">Final Fantasy XVI: Game of the Year Edition</p>
                     </div>
                     <div class="precio-eliminar">
@@ -47,7 +33,7 @@
             <article>
                 <div class="articulo">
                     <div class="imagen-titulo">
-                        <img src="/public/img/producto1_free.jpg" alt="Juego1" class="imagen-producto"></i>
+                        <img src="/img/producto1_free.jpg" alt="Juego1" class="imagen-producto"></i>
                         <p class="titulo-producto">Advanced Dungeons & Dragons: Eye of the Beholder II - The Legend of Darkmoon</p>
                     </div>
                     <div class="precio-eliminar">
@@ -94,36 +80,6 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="footer__logo-2">
-            <img src="/public/img/logo.png" alt="logo">
-            <h1>VAPOR</h1>
-        </div>
-        <ul type="None">
-            <li><a href="#">EMPLEO |</a></li>
-            <li><a href="#">INFORMACIÓN |</a></li>
-            <li><a href="#">ASISTENCIA |</a></li>
-            <li><a href="#">CONTACTO</a></li>
-        </ul>
-        <ul type="None" class="redes">
-            <li><a href="#"><i class="fab fa-facebook" style="color: #ffffff;"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter" style="color: #ffffff;"></i></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube" style="color: #ffffff;"></i></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitch" style="color: #ffffff;"></i></a></li>
-        </ul>
-        <p>©2023 Vapor Entertainment, Inc.</p>
-        <p>Todas los</p>
-        <p class="negritos">juegos mencionados NO son</p>
-        <p>propiedad de los respectivos desarrolladores de la pagina web.</p>
-        <ul type="None" class="politicas">
-            <li><a href="#">Privacidad |</a></li>
-            <li><a href="#">Legal |</a></li>
-            <li><a href="#">Términos |</a></li>
-            <li><a href="#">Cookie Policy |</a></li>
-            <li><a href="#">Ajustes de cookies</a></li>
-        </ul>
-    </footer>
+    <%-include('../partials/footer')%>
 </body>
 </html>

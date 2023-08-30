@@ -1,6 +1,6 @@
 const controller = {
     index: function (req, res) {
-        res.render('productCart')
+        res.render('products/productCart')
     }
 }
 
