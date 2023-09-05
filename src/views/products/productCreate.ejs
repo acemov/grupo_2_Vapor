@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de producto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/productCreate.css" rel="stylesheet">
+</head>
+<body>
+    <%-include('../partials/header')%>
+    <div>
+		<div class="titulo">
+			<h1>Creá un producto</h1>
+		</div>
+		<div class="caja-grande">
+			<form action="#" method="post">
+				<div class="caja-chica">
+					<div>
+						<label for="name" class="label">Nombre del producto:</label>
+						<input type="text" id="name" name="nombre" placeholder="Ej: Outlast 2" class="input">
+					</div>
+					<div>
+						<label for="price" class="label">Precio del producto:</label>
+						<input type="text" id="price" name="precio" placeholder="Ej: $10.000" class="input">
+					</div>
+					<div>
+						<label for="discount" class="label">Descuento:</label>
+						<input type="text" id="discount" name="descuento" placeholder="Ej: 15%" class="input">
+					</div>
+					<div class="category-image">
+						<label for="categoria" class="label">Categoría:</label>
+						<select name="categoria" id="categoria" class="input">
+							<option>Elegí</option>
+							<option value="aaa">AAA</option>
+							<option value="aa">AA</option>
+							<option value="indie">Indie</option>
+						</select>
+						<label for="image" class="label">Imagen de portada</label>
+						<input type="file" id="image" name="imagen" accept=".jpg, .png" class="input">
+					</div>
+					<div>
+						<label for="descripcion" class="label">Descipción</label>
+						<textarea id="descripcion" name="descripcion" class="input"></textarea>
+					</div>
+					<div>
+						<button type="submit">Subir producto</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+    <%-include('../partials/footer')%>
+</body>
+</html>
