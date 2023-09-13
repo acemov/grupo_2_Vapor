@@ -87,6 +87,7 @@ header img {
 .caja-grande {
   display: block;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .caja-chica{
@@ -126,7 +127,8 @@ textarea.input {
 .category-image{
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 90%;
+  max-width: 350px;
 }
 
 /* - - - FOOTER - - - */
