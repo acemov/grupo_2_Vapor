@@ -10,6 +10,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 63vh;
 }
 main{
   background: rgb(255, 104, 121);
@@ -21,7 +22,7 @@ main{
 .entrada div button{
   border: 3px solid red;
   border-radius: 10px;
-  background-color: rgba(255, 0, 0, 0.365);
+  background-color: rgba(255, 0, 0, 0.2);
   color: red;
   padding: 10px;
   width: 130px;
@@ -36,7 +37,7 @@ main{
   width: 200px;
   margin-top: 25px;
 }
-.section-one, .section-two{
+.section-one, .section-two, .texto{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,6 +49,72 @@ main{
   font-size: small;
   margin: 0;
 }
+.section-one h3, .section-two h3{
+  font-size: 16px;
+}
 @media (min-width: 768px) {
-
+  .entrada{
+    height: 420px;
+  }
+  .section-one{
+    background-image: url('/img/carrion/primera_fondo.jpg');
+  }
+  .section-two{
+    background-image: url('/img/carrion/segunda_fondo.jpg');
+  }
+  .section-one, .section-two{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 363px;
+  }
+  .texto{
+    width: 456px;
+    height: 150px;
+  }
+  .primera-img{
+    order: 1;
+  }
+  .entrada div button{
+    width: 200px;
+  }
+  .precio-entrada{
+    font-size: 20px;
+  }
+}
+@media (min-width: 1240px) {
+  .entrada{
+    height: 92vh;
+  }
+  .precio-entrada{
+    margin: 50px 0;
+  }
+  .logo{
+    width: 425px;
+  }
+  .section-one, .section-two{
+    height: 50vh;
+  }
+  .primera-img, .segunda-img{
+    width: 500px;
+  }
+  .primera-img{
+    margin-left: 200px;
+  }
+  .segunda-img{
+    margin-right: 200px;
+  }
+  .section-one p, .section-two p{
+    font-size: 16px;
+  }
+  .section-one h3, .section-two h3{
+    font-size: 25px;
+  }
+  .entrada div button{
+    margin: 20px;
+  }
 }
