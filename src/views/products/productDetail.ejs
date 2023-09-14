@@ -1,70 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles de Producto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/productDetail.css">
+    <link rel="stylesheet" href="/css/headerYfooter.css">
+    <title>Detalles de Producto</title>
 </head>
-<body>
-    <header>
-        <div class="header-1">
-            <div class="header__logo">
-                <img src="/img/logo.png" alt="logo">
-                <h1>VAPOR</h1>
-            </div>
-            <ul class="header__link">
-                <li class="header__buscador"><input type="text" placeholder="Buscar"></li>
-                <li><a href="#">ACERCA DE</a></li>
-                <li><a href="#"><i class="fas fa-user" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart" style="color: #ffffff;"></i></a></li>
-                <li><a href="#">SOPORTE</a></li>
-            </ul>
-        </div>
-    </header>
 
-    <!--botones_compra_precio-->
-    <section class="producto-section">
-        <div class="caja-padre">
-            <img class="fondo" src="/img/carrion/fondo de producto.jpg">
-            <div class="contenido-superpuesto">
+<body>
+    <!-- ------------------------header-----------------------------  -->
+    <%- include('../partials/header.ejs') %>
+        <!-- ------------------------main-----------------------------  -->
+        <main>
+            <!-- ENTRADA -->
+            <section class="entrada">
                 <img class="logo" src="/img/carrion/carrion logo.png" alt="Logo">
-                <p class="precio">Precio: $2.900</p>
-                <div class="botones">
-                    <button class="boton-comprar">Comprar ahora</button>
-                    <button class="boton-carrito">Añadir al carrito</button>
+                <p>ARS$ 1.400,00</p>
+                <div>
+                    <button>COMPRAR AHORA</button>
+                    <button>AÑADIR AL CARRITO</button>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-<!--imagen_descripcion_caracteristicas_-->
-<section class="producto-section caracteristicas-section">
-  <div class="caja-padre">
-      <div class="caja-hija">
-          <div class="imagen-descripcion">
-              <img class="imagen" src="/img/carrion/primera.jpg" alt="Imagen">
-              <div class="descripcion">
-                  <p>Características: este juego es muy bueno. Tenes que comprarlo</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-<section class="producto-section descripcion-section">
-  <div class="caja-padre">
-      <div class="caja-hija">
-          <div class="imagen-descripcion">
-              <div class="descripcion">
-                  <p>Descripción: que esperas para comprarlo?</p>
-              </div>
-              <img class="imagen" src="/img/carrion/segunda.jpg" alt="Imagen">
-          </div>
-      </div>
-  </div>
-</section>
-    
-<%- include('../partials/footer.ejs') %>
+            </section>
+
+            <!-- PRIMERA CARACTERISTICAS -->
+            <section class="section-one">
+                <img class="primera-img" src="/img/carrion/primera.jpg" alt="Imagen">
+                <h3>PROGRESIÓN Y DESARROLLO</h3>
+                <p>A medida que el jugador avanza en el juego, la criatura irá creciendo y evolucionando. El jugador
+                    podrá desbloquear nuevas habilidades y poderes que le permitirán superar los obstáculos del juego y
+                    enfrentarse a enemigos más poderosos.</p>
+            </section>
+            <!-- SEGUNDA CARACTERISTICAS -->
+            <section class="section-two">
+                <img class="segunda-img" src="/img/carrion/segunda.jpg" alt="Imagen">
+                <h3>SIGILO Y SUPERVIVENCIA</h3>
+                <p>El sigilo es un elemento clave en Carrion. La criatura es muy débil al principio del juego, y los
+                    humanos pueden matarla fácilmente si la detectan. Por ello, el jugador deberá aprender a ocultarse y
+                    moverse en las sombras para evitar ser visto.</p>
+            </section>
+        </main>
+        <!-- ------------------------footer-----------------------------  -->
+        <%- include('../partials/footer.ejs') %>
 </body>
+
 </html>
