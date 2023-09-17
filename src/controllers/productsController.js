@@ -1,5 +1,14 @@
 const controller = {
     index: function (req, res) {
+        res.render('/products/products')
+    },
+    create: function (req, res) {
+        res.render('products/productCreate')
+    },
+    detail: function (req, res) {
+        res.render('products/productDetail')
+    },
+    edit: function (req, res) {
         let datos = {
             nombre: req.body.nombre,
             edad: req.body.edad,
@@ -17,7 +26,7 @@ const controller = {
         juegosJSON = JSON.stringify(juego)
         fs.writeFileSync('./data/products.json', juegosJSON)
         res.render('products/productEdit')
-    }
+    },
 }
 
 module.exports = controller
