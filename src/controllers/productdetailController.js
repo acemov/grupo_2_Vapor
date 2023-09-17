@@ -1,5 +1,8 @@
+const fs = require('fs')
 const controller = {
     detail: function (req, res) {
+
+
         res.render('products/productDetail.ejs')
     }
 }

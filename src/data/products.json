@@ -2,8 +2,14 @@
     "name": "",
     "id":"",
     "precio": "",
-    "descuento": "",
-    "categoria": "",
-    "img": "",
-    "descripcion": ""
+    "fondo": "",
+    "logo": "",
+
+    "fondoN1": "",
+    "logoN1": "",
+    "descripcionN1": "",
+    
+    "fondoN2": "",
+    "logoN2": "",
+    "descripcionN2": ""
 }
