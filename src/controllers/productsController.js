@@ -9,6 +9,7 @@ const controller = {
         res.render('products/productDetail')
     },
     edit: function (req, res) {
+        /* Tito, no toy seguro pero me parece que esto va en el metodo save, excepto el res.render*/
         let datos = {
             nombre: req.body.nombre,
             edad: req.body.edad,
@@ -26,6 +27,12 @@ const controller = {
         juegosJSON = JSON.stringify(juego)
         fs.writeFileSync('./data/products.json', juegosJSON)
         res.render('products/productEdit')
+    },
+    store: function (req, res) {
+        res.redirect('/products/products')
+    },
+    save: function (req, res) {
+
     },
 }
 
