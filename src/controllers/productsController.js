@@ -1,6 +1,10 @@
+const productsData = require('../data/products.json');
 const controller = {
-    index: function (req, res) {
-        res.render('/products/products')
+    mostrandoListaDeProductos: function (req, res) {
+        
+
+
+        res.render('products/productLista.ejs')
     },
     create: function (req, res) {
         res.render('products/productCreate')
@@ -29,7 +33,7 @@ const controller = {
         res.render('products/productEdit')
     },
     store: function (req, res) {
-        res.redirect('/products/products')
+        res.redirect('/products/productLista.ejs')
     },
     save: function (req, res) {
 

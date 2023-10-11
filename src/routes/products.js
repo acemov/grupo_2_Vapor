@@ -13,7 +13,7 @@ const validateCreateform = [
 
 /* Metodo GET, se encarga de mostrar las vistas */
 
-router.get('/', productsController.index)
+router.get('/listaDeProductos', productsController.mostrandoListaDeProductos)
 router.get('/create', productsController.create)
 router.get('/:id', productsController.detail)
 router.get('/:id/edit', productsController.edit)
