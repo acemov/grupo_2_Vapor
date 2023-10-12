@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de productos</title>
 </head>
+
 <body>
-    <h1>Soy un listado de productos</h1>
+
+    <ul>
+        <% products.forEach(function(product) { %>
+            <li><a href="#"><%= product.name %></a></li>
+            <li><a href="#"><%= product.id %></a></li>
+            <li><a href="#"><%= product.precio %></a></li>
+            <li><a href="#"><%= product.fondo %></a></li>
+            <li><a href="#"><%= product.logo %></a></li>
+            <li><a href="#"><%= product.fondoN1 %></a></li>
+            <li><a href="#"><%= product.logoN1 %></a></li>
+            <li><a href="#"><%= product.descripcionN1 %></a></li>
+            <li><a href="#"><%= product.fondoN2 %></a></li>
+            <li><a href="#"><%= product.logoN2%></a></li>
+            <li><a href="#"><%= product.descripcionN2%></a></li>
+            <hr>
+        <% }); %>
+        
+    </ul>
+    
 </body>
+
 </html>

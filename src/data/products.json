@@ -1,15 +1,28 @@
-{
-    "name": "",
-    "id":"",
-    "precio": "",
-    "fondo": "",
-    "logo": "",
-
-    "fondoN1": "",
-    "logoN1": "",
-    "descripcionN1": "",
-    
-    "fondoN2": "",
-    "logoN2": "",
-    "descripcionN2": ""
-}
+[
+    {
+        "name": "aaaaaa",
+        "id": "1111",
+        "precio": "222",
+        "fondo": "222",
+        "logo": "222",
+        "fondoN1": "222",
+        "logoN1": "222",
+        "descripcionN1": "bbbbb",
+        "fondoN2": "222",
+        "logoN2": "222",
+        "descripcionN2": "cccccc"
+    },
+    {
+        "name": "aaaaaa",
+        "id": "1111",
+        "precio": "222",
+        "fondo": "222",
+        "logo": "222",
+        "fondoN1": "222",
+        "logoN1": "222",
+        "descripcionN1": "bbbbb",
+        "fondoN2": "222",
+        "logoN2": "222",
+        "descripcionN2": "cccccc"
+    }
+]

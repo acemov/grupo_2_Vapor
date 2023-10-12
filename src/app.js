@@ -21,7 +21,7 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
-app.use (session({secret: 'Secretito'}))
+// esta linea me daba error asi que la sacque xd app.use (session({secret: 'Secretito'}))
 
 // - - - IMPORTANDO RUTAS - - - //
 
