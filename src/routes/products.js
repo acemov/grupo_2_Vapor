@@ -30,7 +30,7 @@ const validateCreateform = [
 
 router.get('/listaDeProductos', productsController.mostrandoListaDeProductos)
 router.get('/create', productsController.create)
-router.get('/:idQuePiden', productsController.detail)
+router.get('/id/:idQuePiden', productsController.detail)
 router.get('/edit', productsController.edit)
 
 /* Metodo POST, se encarga de enviar la información de los formularios y ejecutar la logica 
@@ -38,6 +38,5 @@ router.get('/edit', productsController.edit)
 router.post('/create', validateCreateform ,productsController.store)
 */
 router.post('/create',upload.array("imagenesProducts"),productsController.store)
-router.post('/:id/edit', productsController.save)
 
 module.exports = router

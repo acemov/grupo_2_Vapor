@@ -18,22 +18,26 @@ const controller = {
         let archivoJuegos = fs.readFileSync('./data/products.json', { encoding: 'utf-8' })
         let juego;
         let juegoEncontrado;
-        
+
         if (archivoJuegos == '') {
-            juego = "no existe ese id"
+            juego = idAbuscar;
+            res.render('products/productNoExiste.ejs', { datos: juego });
         } else {
-            juego = JSON.parse(archivoJuegos)
+            juego = JSON.parse(archivoJuegos);
             for (let i = 0; i < juego.length; i++) {
-                if (juego[i].id = idAbuscar) {
-                    juegoEncontrado = juego[i]
+                if (juego[i].id == idAbuscar) {
+                    juegoEncontrado = juego[i];
+                    res.render('products/productDetailParaJson', { datos: juegoEncontrado });
+                    return; // Importante: sal del bucle una vez que encuentres el producto
                 }
             }
+            // Si llegas aquí, significa que no se encontró el producto
+            juego = idAbuscar;
+            res.render('products/productNoExiste.ejs', { datos: juego });
         }
-        res.render('products/productDetailParaJson' ,{datos:juegoEncontrado})
     },
     edit: function (req, res) {
-
-        res.render('products/productDetail.ejs')
+        res.render('products/productEdit.ejs')
     },
     store: function (req, res) {
         const nombresDeImagenes = req.files.map(file => file.filename);
@@ -59,9 +63,6 @@ const controller = {
         fs.writeFileSync('./data/products.json', juegosJSON)
 
         res.render('products/productLista.ejs', { products: productsData });
-    },
-    save: function (req, res) {
-
     },
 }
 

@@ -18,26 +18,58 @@
 			<h1>Editá un producto</h1>
 		</div>
 		<div class="caja-grande">
-			<form class="caja-chica" action="/src/views/products/productEdit.ejs" method="post">
-					<div>
-						<label for="name" class="label">Nombre del producto:</label>
-						<input type="text" id="name" name="nombre" placeholder="Nombre anterior" class="input">
-					</div>
-					<div>
-						<label for="price" class="label">Precio del producto:</label>
-						<input type="text" id="price" name="precio" placeholder="Precio anterior" class="input">
-					</div>
-					<div>
-						<label for="discount" class="label">Descuento:</label>
-						<input type="text" id="discount" name="descuento" placeholder="Decuento anterior" class="input">
-					</div>
-					<div>
-						<label for="descripcion" class="label">Descipción</label>
-						<textarea id="descripcion" name="descripcion" class="input"></textarea>
-					</div>
-					<div>
-						<button type="submit">Subir producto</button>
-					</div>
+			<form class="caja-chica" action="/products/create" method="post" enctype="multipart/form-data">
+				<div>
+					<label for="discount" class="label">Nombre</label>
+					<input type="text" id="discount" name="nombre" placeholder="" class="input">
+				</div>
+				<div>
+					<label for="discount" class="label">ID</label>
+					<input type="text" id="discount" name="id" placeholder="" class="input">
+				</div>
+				<div>
+					<label for="discount" class="label">Precio</label>
+					<input type="text" id="discount" name="precio" placeholder="" class="input">
+				</div>
+				<div>
+					<label for="name" class="label">Fondo</label>
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
+				</div>
+				<div>
+					<label for="price" class="label">Imagen</label>
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
+				</div>
+				<hr style="width: 2000px;">
+				<h2>CARACTERÍSTICA N1</h2>
+				<div>
+					<label for="name" class="label">Fondo</label>
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
+				</div>
+				<div>
+					<label for="price" class="label">Imagen</label>
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
+				</div>
+				<div>
+					<label for="descripcion" class="label">Descipción</label>
+					<textarea id="descripcion" name="descripcionN1" class="input"></textarea>
+				</div>
+				<hr style="width: 2000px;">
+				<h2>CARACTERÍSTICA N2</h2>
+				<div>
+					<label for="name" class="label">Fondo</label>
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
+				</div>
+				<div>
+					<label for="price" class="label">Imagen</label>
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
+				</div>
+				<div>
+					<label for="descripcion" class="label">Descipción</label>
+					<textarea id="descripcion" name="descripcionN2" class="input"></textarea>
+				</div>
+				<div>
+					<button type="submit">Editar producto</button>
+				</div>
 			</form>
 		</div>
 	</div>
