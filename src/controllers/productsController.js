@@ -3,11 +3,12 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
 
 const productsData = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+
+
 const controller = {
     mostrandoListaDeProductos: function (req, res) {
-
         res.render('products/productLista.ejs', { products: productsData });
-
     },
     create: function (req, res) {
         res.render('products/productCreate')
@@ -36,7 +37,7 @@ const controller = {
         res.render('products/productEdit')
     },
     store: function (req, res) {
-        res.redirect('/products/productLista.ejs')
+        res.render('products/productLista.ejs', { products: productsData });
     },
     save: function (req, res) {
 

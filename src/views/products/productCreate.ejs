@@ -19,7 +19,7 @@
 			<div class="titulo">
 				<h1>Creá un producto</h1>
 			</div>
-			<form class="caja-chica" action="/create" method="post">
+			<form class="caja-chica" action="/products/create" method="post" enctype="multipart/form-data">
 				<div>
 					<label for="discount" class="label">Nombre</label>
 					<input type="text" id="discount" name="name" placeholder="" class="input">
@@ -34,21 +34,21 @@
 				</div>
 				<div>
 					<label for="name" class="label">Fondo</label>
-					<input type="file" id="image" name="background" accept=".jpg, .png" class="input">
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
 				</div>
 				<div>
 					<label for="price" class="label">Imagen</label>
-					<input type="file" id="image" name="Image" accept=".jpg, .png" class="input">
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
 				</div>
 				<hr style="width: 2000px;">
 				<h2>CARACTERÍSTICA N1</h2>
 				<div>
 					<label for="name" class="label">Fondo</label>
-					<input type="file" id="image" name="background2" accept=".jpg, .png" class="input">
+					<input multiple type="file" id="image" name="imagenesProducts"  accept=".jpg, .png" class="input">
 				</div>
 				<div>
 					<label for="price" class="label">Imagen</label>
-					<input type="file" id="image" name="Image2" accept=".jpg, .png" class="input">
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
 				</div>
 				<div>
 					<label for="descripcion" class="label">Descipción</label>
@@ -58,11 +58,11 @@
 				<h2>CARACTERÍSTICA N2</h2>
 				<div>
 					<label for="name" class="label">Fondo</label>
-					<input type="file" id="image" name="background3" accept=".jpg, .png" class="input">
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
 				</div>
 				<div>
 					<label for="price" class="label">Imagen</label>
-					<input type="file" id="image" name="Image3" accept=".jpg, .png" class="input">
+					<input multiple type="file" id="image" name="imagenesProducts" accept=".jpg, .png" class="input">
 				</div>
 				<div>
 					<label for="descripcion" class="label">Descipción</label>
