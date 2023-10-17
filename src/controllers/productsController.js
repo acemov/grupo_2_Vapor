@@ -18,11 +18,20 @@ const controller = {
     },
     edit: function (req, res) {
         /* Tito, no toy seguro pero me parece que esto va en el metodo save, excepto el res.render*/
+
+        res.render('products/productEdit')
+    },
+    store: function (req, res) {
+        const nombresDeImagenes = req.files.map(file => file.filename);
         let datos = {
             nombre: req.body.nombre,
-            edad: req.body.edad,
-            email: req.body.email
+            id: req.body.id,
+            precio: req.body.precio,
+            imagenes: nombresDeImagenes,
+            descripcionN1: req.body.descripcionN1,
+            descripcionN2: req.body.descripcionN2,
         }
+
         let archivoJuegos = fs.readFileSync('./data/products.json', { encoding: 'utf-8' })
         let juego;
         if (archivoJuegos == '') {
@@ -34,9 +43,7 @@ const controller = {
 
         juegosJSON = JSON.stringify(juego)
         fs.writeFileSync('./data/products.json', juegosJSON)
-        res.render('products/productEdit')
-    },
-    store: function (req, res) {
+
         res.render('products/productLista.ejs', { products: productsData });
     },
     save: function (req, res) {

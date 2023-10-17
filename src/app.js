@@ -13,12 +13,12 @@ app.set('view engine', 'ejs')
 
 app.use(express.static(path.resolve(__dirname, '../public')))
 
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 app.use(methodOverride('_method'))
 
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 // esta linea me daba error asi que la sacque xd app.use (session({secret: 'Secretito'}))

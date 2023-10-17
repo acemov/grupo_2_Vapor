@@ -4,14 +4,14 @@ const {body} = require('express-validator')
 const multer = require("multer")
 const fs = require('fs');
 const path = require('path');
-
+const uuid = require('uuid');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb){
         cb(null, "../public/img/productos")
     },
     filename: function (req, file, cb) {
-        cb(null , file.fieldname + "-" + Date.now () + path.extname(file.originalname))
+        cb(null , file.fieldname + "-" + Date.now () + '-' + uuid.v4() + + path.extname(file.originalname))
     }
 })
 var upload = multer ({storage : storage})

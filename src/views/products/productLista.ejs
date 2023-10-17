@@ -11,22 +11,37 @@
 
     <ul>
         <% products.forEach(function(product) { %>
-            <li><a href="#"><%= product.name %></a></li>
-            <li><a href="#"><%= product.id %></a></li>
-            <li><a href="#"><%= product.precio %></a></li>
-            <li><a href="#"><%= product.fondo %></a></li>
-            <li><a href="#"><%= product.logo %></a></li>
-            <li><a href="#"><%= product.fondoN1 %></a></li>
-            <li><a href="#"><%= product.logoN1 %></a></li>
-            <li><a href="#"><%= product.descripcionN1 %></a></li>
-            <li><a href="#"><%= product.fondoN2 %></a></li>
-            <li><a href="#"><%= product.logoN2%></a></li>
-            <li><a href="#"><%= product.descripcionN2%></a></li>
+            <li><a href="#">
+                    <%= product.nombre %>
+                </a></li>
+            <li><a href="#">
+                    <%= product.id %>
+                </a></li>
+            <li><a href="#">
+                    <%= product.precio %>
+                </a></li>
+            <li><img src="/img/productos/<%=product.imagenes[0]%>" alt="Imagen del Producto"
+                    style="width: 30px; height: 30px;"></li>
+            <li><img src="/img/productos/<%=product.imagenes[1]%>" alt="Imagen del Producto"
+                    style="width: 30px; height: 30px;"></li>
+            <li><img src="/img/productos/<%=product.imagenes[2]%>" alt="Imagen del Producto"
+                    style="width: 30px; height: 30px;"></li>
+            <li><img src="/img/productos/<%=product.imagenes[3]%>" alt="Imagen del Producto"
+                    style="width: 30px; height: 30px;"></li>
+            <li><a href="#">
+                    <%= product.descripcionN1 %>
+                </a></li>
+            <li><img src="/img/productos/<%=product.imagenes[4]%>" alt="Imagen del Producto"
+                    style="width: 30px; height: 30px;"></li>
+            <li><img src="/img/productos/<%=product.imagenes[5]%>" alt="Imagen del Producto"
+                    style="width: 30px; height: 30px;"></li>
+            <li><a href="#">
+                    <%= product.descripcionN2 %>
+                </a></li>
             <hr>
-        <% }); %>
-        
+            <% }); %>
+
     </ul>
-    
 </body>
 
 </html>
