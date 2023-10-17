@@ -11,7 +11,7 @@ const storage = multer.diskStorage({
         cb(null, "../public/img/productos")
     },
     filename: function (req, file, cb) {
-        cb(null , file.fieldname + "-" + Date.now () + '-' + uuid.v4() + + path.extname(file.originalname))
+        cb(null , file.fieldname + "-" + Date.now () + '-' + uuid.v4() + path.extname(file.originalname))
     }
 })
 var upload = multer ({storage : storage})
@@ -30,8 +30,8 @@ const validateCreateform = [
 
 router.get('/listaDeProductos', productsController.mostrandoListaDeProductos)
 router.get('/create', productsController.create)
-router.get('/:id', productsController.detail)
-router.get('/:id/edit', productsController.edit)
+router.get('/:idQuePiden', productsController.detail)
+router.get('/edit', productsController.edit)
 
 /* Metodo POST, se encarga de enviar la información de los formularios y ejecutar la logica 
 

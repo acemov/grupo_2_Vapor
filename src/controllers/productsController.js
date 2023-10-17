@@ -14,12 +14,26 @@ const controller = {
         res.render('products/productCreate')
     },
     detail: function (req, res) {
-        res.render('products/productDetail')
+        let idAbuscar = req.params.idQuePiden
+        let archivoJuegos = fs.readFileSync('./data/products.json', { encoding: 'utf-8' })
+        let juego;
+        let juegoEncontrado;
+        
+        if (archivoJuegos == '') {
+            juego = "no existe ese id"
+        } else {
+            juego = JSON.parse(archivoJuegos)
+            for (let i = 0; i < juego.length; i++) {
+                if (juego[i].id = idAbuscar) {
+                    juegoEncontrado = juego[i]
+                }
+            }
+        }
+        res.render('products/productDetailParaJson' ,{datos:juegoEncontrado})
     },
     edit: function (req, res) {
-        /* Tito, no toy seguro pero me parece que esto va en el metodo save, excepto el res.render*/
 
-        res.render('products/productEdit')
+        res.render('products/productDetail.ejs')
     },
     store: function (req, res) {
         const nombresDeImagenes = req.files.map(file => file.filename);

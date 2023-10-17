@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/productDetailParaJson.css">
+    <link rel="stylesheet" href="/css/headerYfooter.css">
+    <title>Detalles de Producto</title>
+</head>
+
+<body>
+    <!-- ------------------------header-----------------------------  -->
+    <%- include('../partials/header.ejs') %>
+        <!-- ------------------------main-----------------------------  -->
+        <main>
+            <!-- ENTRADA -->
+            <section class="entrada" style="background-image: url('/img/productos/<%= datos.imagenes[0] %>');">
+                <img class="logo" src="/img/productos/<%= datos.imagenes[1] %>" alt="Logo">
+                <p class="precio-entrada">ARS$ <%= datos.precio %></p>
+                <div>
+                    <button>COMPRAR AHORA</button>
+                    <button>AÑADIR AL CARRITO</button>
+                </div>
+            </section>
+
+            <!-- PRIMERA CARACTERISTICAS -->
+            <section class="section-one" style="background-image: url('/img/productos/<%= datos.imagenes[2] %>');">
+                <img class="primera-img" src="/img/productos/<%= datos.imagenes[3] %>" alt="Imagen">
+                <div class="texto">
+                    <h3>PRIMERA CARACTERISTICAS</h3>
+                    <p><%= datos.descripcionN1 %></p>
+                </div>
+            </section>
+            <!-- SEGUNDA CARACTERISTICAS -->
+            <section class="section-two" style="background-image: url('/img/productos/<%= datos.imagenes[4] %>');">
+                <img class="segunda-img" src="/img/productos/<%= datos.imagenes[5] %>" alt="Imagen">
+                <div class="texto">
+                    <h3>SEGUNDA CARACTERISTICAS</h3>
+                    <p><%= datos.descripcionN2 %></p>
+                </div>
+            </section>
+        </main>
+        <!-- ------------------------footer-----------------------------  -->
+        <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
