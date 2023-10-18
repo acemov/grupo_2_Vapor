@@ -86,6 +86,21 @@ const controller = {
     
         // Redirige al usuario a la lista de productos una vez que se ha editado el producto
         res.render('products/productLista.ejs', { products: productsData });
+    },
+    delete: function (req,res) {
+        let idObjetoAEliminar = req.params.userID
+
+        let archivoJuegos = fs.readFileSync('./data/products.json', { encoding: 'utf-8' })
+        let juego = JSON.parse(archivoJuegos)
+        
+        const arraySinObjeto = juego.filter(function (id) {
+            return id.id !== idObjetoAEliminar
+        });
+
+        juegosJSON = JSON.stringify(arraySinObjeto)
+        fs.writeFileSync('./data/products.json', juegosJSON)
+        
+        res.render('products/productLista.ejs', { products: productsData });
     }
     
 }

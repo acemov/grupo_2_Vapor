@@ -38,6 +38,9 @@
                         <li><a href="#">
                                         <%= product.descripcionN2 %>
                                 </a></li>
+                        <form action="/products/delete/<%= product.id %>?_method=DELETE" method="post">
+                                <button type="submit">DELETE</button>
+                        </form>
                         <hr>
                         <% }); %>
 

@@ -32,7 +32,7 @@ router.get('/listaDeProductos', productsController.mostrandoListaDeProductos) //
 router.get('/create', productsController.create) //http://localhost:3000/products/create
 router.get('/id/:idQuePiden', productsController.detail) //http://localhost:3000/products/id/:idQuePiden
 router.get('/:idAeditar/edit', productsController.edit) //http://localhost:3000/products/:idAeditar/edit
-
+router.delete('/delete/:userID',productsController.delete) //http://localhost:3000/products/listaDeProductos
 /* Metodo POST, se encarga de enviar la información de los formularios y ejecutar la logica 
 
 router.post('/create', validateCreateform ,productsController.store)
