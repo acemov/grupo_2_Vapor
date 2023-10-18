@@ -36,9 +36,6 @@ const controller = {
             res.render('products/productNoExiste.ejs', { datos: juego });
         }
     },
-    edit: function (req, res) {
-        res.render('products/productEdit.ejs')
-    },
     store: function (req, res) {
         const nombresDeImagenes = req.files.map(file => file.filename);
         let datos = {
@@ -58,12 +55,39 @@ const controller = {
             juego = JSON.parse(archivoJuegos)
         }
         juego.push(datos)
-
+        
         juegosJSON = JSON.stringify(juego)
         fs.writeFileSync('./data/products.json', juegosJSON)
-
+        
         res.render('products/productLista.ejs', { products: productsData });
     },
+    edit: function (req, res) {
+        let idAbuscar = req.params.idAeditar
+        res.render('products/productEdit.ejs',{id : idAbuscar})
+    },
+    update: function(req, res) {
+        const nombresDeImagenes = req.files.map(file => file.filename);
+        // Busca el producto por ID y actualiza sus propiedades
+        for (let i = 0; i < productsData.length; i++) {
+            if (productsData[i].id === req.body.id) {
+                productsData[i].nombre = req.body.nombre;
+                productsData[i].id = req.body.id;
+                productsData[i].precio = req.body.precio;
+                productsData[i].imagenes = nombresDeImagenes;
+                productsData[i].descripcionN1 = req.body.descripcionN1;
+                productsData[i].descripcionN2 = req.body.descripcionN2;
+                break; // Importante: salir del bucle una vez que se haya actualizado el producto
+            }
+        }
+    
+        // Guarda los cambios en el archivo JSON
+        const productosJSON = JSON.stringify(productsData);
+        fs.writeFileSync(productsFilePath, productosJSON);
+    
+        // Redirige al usuario a la lista de productos una vez que se ha editado el producto
+        res.render('products/productLista.ejs', { products: productsData });
+    }
+    
 }
 
 module.exports = controller

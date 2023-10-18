@@ -28,15 +28,16 @@ const validateCreateform = [
 
 /* Metodo GET, se encarga de mostrar las vistas */
 
-router.get('/listaDeProductos', productsController.mostrandoListaDeProductos)
-router.get('/create', productsController.create)
-router.get('/id/:idQuePiden', productsController.detail)
-router.get('/edit', productsController.edit)
+router.get('/listaDeProductos', productsController.mostrandoListaDeProductos) //http://localhost:3000/products/listaDeProductos
+router.get('/create', productsController.create) //http://localhost:3000/products/create
+router.get('/id/:idQuePiden', productsController.detail) //http://localhost:3000/products/id/:idQuePiden
+router.get('/:idAeditar/edit', productsController.edit) //http://localhost:3000/products/:idAeditar/edit
 
 /* Metodo POST, se encarga de enviar la información de los formularios y ejecutar la logica 
 
 router.post('/create', validateCreateform ,productsController.store)
 */
-router.post('/create',upload.array("imagenesProducts"),productsController.store)
+router.post('/create',upload.array("imagenesProducts"),productsController.store) //http://localhost:3000/products/create
+router.put('/update', upload.array("imagenesProducts") ,productsController.update); //http://localhost:3000/products/update/:id
 
 module.exports = router

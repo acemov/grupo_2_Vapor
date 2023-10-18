@@ -15,10 +15,10 @@
     <%-include('../partials/header')%>
     <div>
 		<div class="titulo">
-			<h1>Editá un producto</h1>
+			<h1>Estas editando el producto con ID:  <%= id %> </h1>
 		</div>
 		<div class="caja-grande">
-			<form class="caja-chica" action="/products/create" method="post" enctype="multipart/form-data">
+			<form class="caja-chica" action="/products/update?_method=PUT" method="post" enctype="multipart/form-data">
 				<div>
 					<label for="discount" class="label">Nombre</label>
 					<input type="text" id="discount" name="nombre" placeholder="" class="input">
