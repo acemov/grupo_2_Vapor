@@ -10,6 +10,7 @@ const session = require('express-session')
 // - - - CONFIGURACIONES - - - //
 
 app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views')) //para ver las vistas
 
 app.use(express.static(path.resolve(__dirname, '../public')))
 
